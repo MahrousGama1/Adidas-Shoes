@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'MyWebFont';
+    /* font-family: "Work Sans", sans-serif; */
+    color: black;
+    background-color: var(--section-background);
+}
+
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+/* @font-face {
+        font-family: 'MyWebFont';
+        src: url('../fonts/Raleway-Bold.ttf');
+} */
+.main-section {
+    height: 100vh;
+    /* border: 2px solid red; */
+    background-color: black;
+    color: white;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.main-section .adidas {
+
+    width: 85%;
+    height: 75%;
+    /* border: 2px solid blue; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: rgb(46 46 46);
+    padding: 20px 10%;
+}
+.main-section .adidas::after {
+content: "";
+position: absolute;
+width: 900px;
+height: 900px;
+top: -40px;
+left: 950px;
+background-color: red;
+border-radius: 50%;
+z-index: -1;
+/* background-image: url('../images/shoes.png');
+background-repeat: no-repeat; */
+}
+.header-adidas {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.main-section .adidas h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 400;
+
+}
+
+.main-section .adidas ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid green; */
+    height: 40px;
+    width: 300px;
+    
+}
+
+.main-section .adidas ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: all .3s ease;
+}
+.main-section .adidas ul li a:hover {
+    color: #ec1839;
+  }
+.parent-main-section{
+    display: flex;
+    justify-content: space-between;
+}
+.left-main-section {
+    margin-top: 120px;
+    /* border: 2px solid #ffc400; */
+    width: 400px;
+    height: 250px;
+}
+
+.left-main-section h3 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+
+.left-main-section p {
+    width: 270px;
+    line-height: 22px;
+}
+.right-main-section img{
+    margin-top: 150px;
+    margin-right: -90px;
+}
